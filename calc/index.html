@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<hmtl>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<title>Calculator</title>
+	</head>
+	<body onload="controller.init();">
+		<div id="content">
+			<h3>Our magic calculator</h3>
+			<div id="calculator">
+				<table>
+					<tr>
+						<td colspan="4" class="display">
+							<div id="display"></div>
+						</td>
+					</tr>
+					<tr class="control">
+						<td onclick="controller.click('AC')">AC</td>
+						<td onclick="controller.click('(')">(</td>
+						<td onclick="controller.click(')')">)</td>
+						<td onclick="controller.click(')')" class="operator">/</td>
+					</tr>
+					<tr>
+						<td onclick="controller.click('7')">7</td>
+						<td onclick="controller.click('8')">8</td>
+						<td onclick="controller.click('9')">9</td>
+						<td onclick="controller.click('*')" class="operator">*</td>
+					</tr>
+					<tr>
+						<td onclick="controller.click('4')">4</td>
+						<td onclick="controller.click('5')">5</td>
+						<td onclick="controller.click('6')">6</td>
+						<td onclick="controller.click('-')" class="operator">-</td>
+					</tr>
+					<tr>
+						<td onclick="controller.click('1')">1</td>
+						<td onclick="controller.click('2')">2</td>
+						<td onclick="controller.click('3')">3</td>
+						<td onclick="controller.click('+')" class="operator">+</td>
+					</tr>
+					<tr>
+						<td onclick="controller.click('0')" colspan="2">0</td>
+						<td onclick="controller.click('.')">.</td>
+						<td onclick="controller.click('=')" class="operator">=</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+	<script src="controller.js"></script>
+</html>
